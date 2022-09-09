@@ -44,15 +44,6 @@
     },
     computed: {
       /**
-       * @returns title in string
-       * @description If the user has set a first name for self, the first name will be displayed after "Hello, " in the title of the application, otherwise "Crema To-Do" will be seen in the title.
-       */
-      personalizedTitle() {
-        return this.data.user.firstName
-          ? `Hello, ${this.data.user.firstName}`
-          : 'Crema To-Do';
-      },
-      /**
        * @returns all filtered todos or filtered todos matching search results
        * @description If any input is entered in the search bar, todos containing the entered input are displayed, otherwise all filtered todos are displayed.
        */
