@@ -32,6 +32,11 @@
           lastDeletedTodo: undefined,
           showLastDeletedTodoNotification: false,
         },
+        preferences: {
+          sortDesc: false,
+          hideBanner: false,
+          date: 'hide' /* hide, date, time, full */,
+        },
       };
     },
     watch: {
