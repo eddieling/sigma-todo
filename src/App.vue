@@ -143,19 +143,14 @@
        * @description This method is a handler written to avoid duplication of the same code block. It is used in both addTodo and recoverTodo methods.
        */
       unshiftOrPushHandler(todoObj) {
-            this.data.preferences.sortDesc
-              ? this.data.todos.unshift(todoObj)
-              : this.data.todos.push(todoObj);
-        // }
+            this.data.todos.push(todoObj);
       },
   
       /**
        * @description - This method is a handler for sorting todos by date/name or ascending/descending.
        */
       rearrangeTodos() {
-            this.data.preferences.sortDesc
-              ? this.data.todos.sort((a, b) => parseFloat(b.date) - parseFloat(a.date))
-              : this.data.todos.sort((a, b) => parseFloat(a.date) - parseFloat(b.date));
+            this.data.todos.sort((a, b) => parseFloat(a.date) - parseFloat(b.date));
             this.cache.filteredTodos = this.data.todos;
       },
       async loadNextImage()
