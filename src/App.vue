@@ -206,11 +206,7 @@
           >
             <div
               class="w-1/12 flex justify-center"
-              :class="
-                data.preferences.date !== 'hide' && data.preferences.date !== undefined
-                  ? 'mt-2'
-                  : 'mt-0'
-              "
+              :class="'mt-0'"
             >
               <a
                 href="#"
@@ -245,11 +241,7 @@
             </div>
             <div
               class="w-1/12 flex gap-3 justify-center"
-              :class="
-                data.preferences.date !== 'hide' && data.preferences.date !== undefined
-                  ? 'mt-2'
-                  : 'mt-0'
-              "
+              :class="'mt-0'"
             >
               <a
                 href="#"
