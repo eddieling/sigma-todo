@@ -188,8 +188,14 @@
   </script>
   
   <template>
-    <div class="p-6 md:p-12 gap-6 md:gap-12 flex flex-col">
-      <div class="w-full flex flex-col gap-3">
+    <div class="p-6 md:p-12 gap-6 md:gap-12 flex flex-col place-items-center">
+      
+      <div class="w-full flex flex-col gap-3 max-w-xl">
+        <div class="relative flex py-5 items-center">
+          <div class="flex-grow border-t border-gray-400"></div>
+          <p>Part 1 Todo List App</p>
+          <div class="flex-grow border-t border-gray-400"></div>
+        </div>
         <div>
           <h1 class="text-4xl font-bold dark:text-gray-200 text-center">
             To-Do List
@@ -255,7 +261,7 @@
           </div>
         </div>
   
-        <div class="w-full flex gap-3 md:gap-6">
+        <div class="w-full flex gap-3 md:gap-6 " >
           <div class="w-1/12 flex justify-center"></div>
           <div class="w-10/12">
             <input
@@ -280,8 +286,9 @@
           </div>
         </div>
   
-        <div class="relative flex py-5 items-center mt-[200px]">
+        <div class="relative flex py-5 items-center mt-[300px]">
           <div class="flex-grow border-t border-gray-400"></div>
+          <p>Part 2 External API</p>
           <div class="flex-grow border-t border-gray-400"></div>
         </div>
   
@@ -290,7 +297,7 @@
             <button class="btn btn-blue w-full flex justify-center" @click="loadNextImage">
               Hit Me!
             </button>
-            
+            <p>See random cat images</p>
           </div>
           
         </div>
